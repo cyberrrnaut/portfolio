@@ -6,15 +6,17 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Soumyendu Das</div>
+      <div class="logo">CYBERNAUT</div>
       <div>
         <ul class="nav-links">
           <li><a href="https://cyb3rnaut.hashnode.dev/">Blog</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Expertise</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
@@ -30,8 +32,10 @@
         </ul>
       </div>
     </nav>
+
+
     <nav id="hamburger-nav">
-      <div class="logo">Soumyendu Das</div>
+      <div class="logo">CYBERNAUT</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -41,7 +45,7 @@
         <div class="menu-links">
           <li><a href="https://cyb3rnaut.hashnode.dev/" >Blog</a></li>
           <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expertise </a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           <li>
@@ -57,14 +61,25 @@
         </div>
       </div>
     </nav>
+   
+
+
+    <div class="scrolling-text-container">
+      <div class="scrolling-text" onclick="openLinkInNewTab()">
+        <span>Schedule a meeting on Calendly</span>
+      </div>    
+  </div>
+  
+
+  
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/profile-pic.png" alt="profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Soumyendu</h1>
-        <p class="section__text__p2">Fullstack Developer</p>
+        <h1 class="title">Cybernaut</h1>
+        <p class="section__text__p2">FREELANCE DEVELOPER</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -96,6 +111,8 @@
         </div>
       </div>
     </section>
+
+
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -117,33 +134,26 @@
                 alt="Experience icon"
                 class="icon"
               />
-              <h3>Experience</h3>
-              <p>Frontend Development</p>
-              <p>Backend Development</p>
+              <h3>Expertise</h3>
+              <p>Frontend Development (React, Next.js)</p>
+              <p>Mobile App Development (Flutter)</p>
             </div>
             <div class="details-container">
               <img
                 src="./assets/education_light.png"
                 src-light="./assets/education_light.png"
                 src-dark="./assets/education_dark.png"
-                alt="Education icon"
+                alt="Skills icon"
                 class="icon"
               />
-              <h3>Education</h3>
-              <p>B.Tech CSE<br />KIIT Bhubaneswar</p>
+              <h3>Skills</h3>
+              <p>JavaScript, React, Next.js, Flutter</p>
+              <p>API Development, UI/UX Design</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I am Soumyendu Das, a seasoned software engineer with a robust
-              foundation in computer science and proficiency in Programming and
-              Developing Frontend web applications. I excel in crafting
-                collaborating on diverse projects, and
-              bringing an innovative approach to software development. My strong
-              communication skills and commitment to continuous learning set me
-              apart. I am ready to contribute actively to cutting-edge solutions
-              and thrive in collaborative environments, making impactful
-              contributions to any software development team.
+              I am Soumyendu Das, a passionate software engineer specializing in web development using React and Next.js, and mobile app development with Flutter. With a solid foundation in computer science and a keen eye for design, I focus on creating seamless, intuitive, and responsive user experiences. I thrive in collaborative environments and am dedicated to delivering high-quality solutions. Whether building fast, dynamic websites or cross-platform mobile applications, I am committed to continuous learning and contributing to innovative, cutting-edge projects.
             </p>
           </div>
         </div>
@@ -157,40 +167,19 @@
         onclick="location.href='./#experience'"
       />
     </section>
+    
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Expertise</h1>
       <div class="experience-details-container">
         <div class="about-containers">
+          <!-- Frontend Development (React/Next.js) -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Frontend Development (React/Next.js)</h2>
             <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark_light.png"
-                  src-light="./assets/checkmark_light.png"
-                  src-dark="./assets/checkmark_dark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+             
+           
               <article>
                 <img
                   src="./assets/checkmark_light.png"
@@ -201,7 +190,6 @@
                 />
                 <div>
                   <h3>Tailwind CSS</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -214,7 +202,6 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Advanced</p>
                 </div>
               </article>
               <article>
@@ -227,7 +214,6 @@
                 />
                 <div>
                   <h3>TypeScript</h3>
-                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -239,15 +225,28 @@
                   class="icon"
                 />
                 <div>
-                  <h3>React Js</h3>
-                  <p>Intermediate</p>
+                  <h3>React JS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.png"
+                  src-light="./assets/checkmark_light.png"
+                  src-dark="./assets/checkmark_dark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Next.js</h3>
                 </div>
               </article>
             </div>
           </div>
+    
+          <!-- Mobile App Development (Flutter) -->
           <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
+            <h2 class="experience-sub-title">Mobile App Development (Flutter)</h2>
+            <div class="article-container ">
               <article>
                 <img
                   src="./assets/checkmark_light.png"
@@ -257,8 +256,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>MongoDB</h3>
-                  <p>Intermediate</p>
+                  <h3>Flutter</h3>
                 </div>
               </article>
               <article>
@@ -270,22 +268,7 @@
                   class="icon"
                 />
                 <div>
-                  <div>
-                    <h3>MySQL</h3>
-                    <p>Intermediate</p>
-                  </div>
-                </article>
-                <article>
-                  <img
-                    src="./assets/checkmark_light.png"
-                    src-light="./assets/checkmark_light.png"
-                    src-dark="./assets/checkmark_dark.png"
-                    alt="Experience icon"
-                    class="icon"
-                  />
-                  <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Dart</h3>
                 </div>
               </article>
               <article>
@@ -297,8 +280,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
+                  <h3>Firebase</h3>
                 </div>
               </article>
               <article>
@@ -310,8 +292,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Next Js</h3>
-                  <p>Intermediate</p>
+                  <h3>API Integration</h3>
                 </div>
               </article>
               <article>
@@ -323,9 +304,7 @@
                   class="icon"
                 />
                 <div>
-                <div>
-                  <h3>Appwrite </h3>
-                  <p>Intermediate</p>
+                  <h3>State Management</h3>
                 </div>
               </article>
             </div>
@@ -341,99 +320,50 @@
         onclick="location.href='./#projects'"
       />
     </section>
+    
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
+      
+      <div class="experience-details-container scroll-container">
+
+
         <div class="about-containers">
+
+
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <img src="https://res.cloudinary.com/dde0qo4wb/image/upload/v1735943080/PORTFOLIO/awfbalobbchtzbkssyhs.png" alt="Project 1" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Password Generator</h2>
+            <h2 class="experience-sub-title project-title">CAMEO</h2>
             <div class="btn-container">
-
-            
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/cyberrrnaut/passWordGenerator'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href=' https://fluffy-longma-5ad782.netlify.app/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://cameo.cyb3rnaut.com/'">Live</button>
             </div>
           </div>
+    
+
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-
-        
+              <img src="https://res.cloudinary.com/dde0qo4wb/image/upload/v1735943897/PORTFOLIO/tuzw5xbns1kgz1ahsiga.png" alt="Project 1" class="project-img" />
             </div>
-            <h2 class="experience-sub-title project-title">Currency Convertor</h2>
+            <h2 class="experience-sub-title project-title">DOMAN</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/cyberrrnaut/currencyConverter'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://lovely-zuccutto-05b395.netlify.app/'"
-              >
-                Live Demo
-              </button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://doman.aikyam.live/' ">Live</button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">To Do App</h2>
+       
 
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/cyberrrnaut/todoApp'"
-              >
-                Github
-              </button>
-              <button   
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://657c92234f9e7f1493fa9c4f--sunny-piroshki-6d71c8.netlify.app/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow_light.png"
-        src-light="./assets/arrow_light.png"
-        src-dark="./assets/arrow_dark.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-      
+      <img src="./assets/arrow_light.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    
+
+
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>

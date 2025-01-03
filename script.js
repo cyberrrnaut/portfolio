@@ -51,3 +51,22 @@ function toggleMenu() {
       icon.src = icon.getAttribute("src-light");
     });
   }
+
+
+
+
+  document.querySelector('.scrolling-text').addEventListener('click', function () {
+    // Add the clicked class to trigger the animation
+    this.classList.add('clicked');
+
+    // Redirect after the animation duration (500ms in this case)
+    setTimeout(function () {
+        window.location.href = 'https://calendly.com/cyb3rnaut';
+    }, 500); // This matches the fade-out duration
+});
+
+
+function openLinkInNewTab() {
+  // Open the Calendly link in a new tab
+  window.open('https://calendly.com/cyb3rnaut', '_blank');
+}
